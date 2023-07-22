@@ -8,7 +8,7 @@ def home(request):
         query = request.POST['query']
         api_url = 'https://api.api-ninjas.com/v1/nutrition?query='
         api_request = requests.get(
-            api_url + query, headers={'X-Api-Key': 'YOUR-API-KEY'})
+            api_url + query, headers={'X-Api-Key': 'IoC5/oQP20LmDf+zAvdnhA==5GvZBxcl48ARjULz'})
         try:
             api = json.loads(api_request.content)
             print(api_request.content)
